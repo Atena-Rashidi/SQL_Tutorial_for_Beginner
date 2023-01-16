@@ -1,0 +1,11 @@
+-- Data Type:
+-- INT, DECIMAL(M,N), VARCHAR(M), BLOB
+-- DATE "YYYY-MM-DD", TIMESTAMP "YYYY-MM-DD HH:MM:SS"
+-- PRIMARY KEY, AUTO_INCREMENT, UNIQUE, NOT NULL, DEFAULT valuecustomer_id
+CREATE TABLE customers(
+	customer_id INT PRIMARY KEY AUTO_INCREMENT,     -- UNIQUE NOT NULL
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    birth_date DATE,
+    points INT DEFAULT 0
+)
